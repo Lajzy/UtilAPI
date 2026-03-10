@@ -6,8 +6,7 @@ public final class UtilAPI extends JavaPlugin {
 
     @Override
     public void onEnable() {
-
-
+        
     }
 
     @Override
