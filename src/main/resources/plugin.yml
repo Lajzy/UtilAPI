@@ -1,0 +1,4 @@
+name: UtilAPI
+version: '1.0-SNAPSHOT'
+main: me.lajzy.utilAPI.UtilAPI
+api-version: '1.21'
