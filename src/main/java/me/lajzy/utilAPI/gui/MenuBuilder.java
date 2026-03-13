@@ -14,18 +14,16 @@ import java.util.Map;
 public abstract class MenuBuilder {
 
     protected Inventory inventory;
-    protected Player player;
     private final Map<Integer, Runnable> clickActions = new HashMap<>();
 
-    public MenuBuilder(Player player, String title, int size) {
-        this.player = player;
+    public MenuBuilder(String title, int size) {
         this.inventory = Bukkit.createInventory(null, size, title);
         setup();
     }
 
     protected abstract void setup();
 
-    public void open() {
+    public void open(Player player) {
         player.openInventory(inventory);
     }
 
