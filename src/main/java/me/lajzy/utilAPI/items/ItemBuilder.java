@@ -46,7 +46,7 @@ public class ItemBuilder {
 
     public ItemBuilder glow() {
         ItemMeta meta = item.getItemMeta();
-        meta.addEnchant(Enchantment.LUCK_OF_THE_SEA, 1, true);
+        meta.addEnchant(Enchantment.LUCK, 1, true);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         item.setItemMeta(meta);
         return this;
