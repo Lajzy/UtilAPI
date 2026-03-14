@@ -12,8 +12,8 @@ public abstract class PaginatedMenuBuilder extends MenuBuilder {
     protected int page = 0;
     protected List<ItemStack> items;
 
-    public PaginatedMenuBuilder(String title, int size) {
-        super(title, size);
+    public PaginatedMenuBuilder(Player player, String title, int size) {
+        super(player, title, size);
         this.items = items;
     }
 
